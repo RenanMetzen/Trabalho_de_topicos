@@ -17,9 +17,17 @@
 </nav>
     <div class="form-group col-md-4 container-fluid" style="padding:10; height:100%; border-bottom-style: solid;">
       <h3 style="text-align:center;"><b>Cadastro:</b></h3>
+      
+      <form method="POST" action="../controllers/Processa.php">
+      
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input class="form-control" id="nome" type="text" name="nome" placeholder="Nome">
+      </div>
+      
       <div class="form-group">
         <label for="biotipo">Biotipo</label>
-        <select class="form-control" id="biotipo">
+        <select class="form-control" name="biotipo" id="biotipo">
           <option value=0 disabled selected>Selecione o seu biotipo</option>
           <option value=1>Endomorfo</option>
           <option value=2>Mesomorfo</option>
@@ -44,7 +52,7 @@
 
       <div class="form-group">
         <label for="atividade">Atividade Física</label>
-        <select class="form-control" id="atividade">
+        <select class="form-control" name="atividade_fisica" id="atividade_fisica">
           <option value=0 disabled selected>Selecione a sua frequência de atividade física</option>
           <option value=1>Sedentário</option>
           <option value=2>Moderada</option>
@@ -53,15 +61,13 @@
         </select>
       </div>
 
-      <button type="button" class="btn btn-primary float-right">Cadastrar</button>
-      
+      <button type="submit" class="btn btn-primary float-right">Cadastrar</button>
+      </form>
     </div>
     
-  <footer class="bg-dark text-center text-white" style="background-color: #9933CC; width:100%;">
-    <p>Author: Hege Refsnes</p>
-    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
-  </footer>
+    <div class="text-center p-3 bg-dark text-white" style="background-color: rgba(0, 0, 0, 0.2);">
+    <b>Autores:</b> João, Renan, Ruan, Thiago e Thomas
+  </div>
   </div>
 </body>
-<script src='js/main.js'></script>
 </html>
