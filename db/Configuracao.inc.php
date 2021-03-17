@@ -3,5 +3,5 @@
 define("HOST","localhost");
 define("USUARIO","root");
 define("SENHA","");
-define("BANCO","trabTopicos");
+define("BANCO","trabtopicos");
 ?>

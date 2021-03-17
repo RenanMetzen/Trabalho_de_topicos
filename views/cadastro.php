@@ -29,25 +29,54 @@
         <label for="biotipo">Biotipo</label>
         <select class="form-control" name="biotipo" id="biotipo">
           <option value=0 disabled selected>Selecione o seu biotipo</option>
-          <option value=1>Endomorfo</option>
-          <option value=2>Mesomorfo</option>
-          <option value=3>Ectomorfo</option>
+          <option value="1.1">Endomorfo</option>
+          <option value="1.2">Mesomorfo</option>
+          <option value="1.3">Ectomorfo</option>
         </select>
       </div>
 
       <div class="form-group">
-        <label for="altura">Altura(cm)</label>
-        <input class="form-control" id="altura" type="number" name="altura" placeholder="0">
+        <label for="biotipo">Altura</label>
+        <select class="form-control" name="altura" id="altura">
+          <option value=0 disabled selected>Selecione a sua altura (cm)</option>
+          <option value="8">201 ou mais</option>
+          <option value="7">200 - 191</option>
+          <option value="6">190 - 181</option>
+          <option value="5">180 - 171</option>
+          <option value="4">170 - 161</option>
+          <option value="3">160 - 151</option>
+          <option value="2">150 - 141</option>
+          <option value="1">140 ou menos</option>
+        </select>
       </div>
     
       <div class="form-group">
-        <label for="idade">Idade</label>
-        <input class="form-control" id="idade" type="number" name="idade" placeholder="0">
+        <label for="biotipo">Idade</label>
+        <select class="form-control" name="idade" id="idade">
+          <option value=0 disabled selected>Selecione a sua idade</option>
+          <option value="7">0 - 3</option>
+          <option value="6">4 - 10</option>
+          <option value="5">11 - 18</option>
+          <option value="4">19 - 29</option>
+          <option value="3">30 - 50</option>
+          <option value="2">50 - 70</option>
+          <option value="1">mais de 50</option>
+        </select>
       </div>
 
       <div class="form-group">
-        <label for="peso">Peso(g)</label>
-        <input class="form-control" id="peso" type="number" name="peso" placeholder="0">
+        <label for="biotipo">Pessoa</label>
+        <select class="form-control" name="idade" id="idade">
+          <option value=0 disabled selected>Selecione o seu Peso (kg)</option>
+          <option value="8">mais de 120</option>
+          <option value="7">120 - 111</option>
+          <option value="6">110 - 101</option>
+          <option value="5">100 - 91</option>
+          <option value="4">90 - 81</option>
+          <option value="3">80 - 71</option>
+          <option value="2">70 - 51</option>
+          <option value="1">menos de 50</option>
+        </select>
       </div>
 
       <div class="form-group">
