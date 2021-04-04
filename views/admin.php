@@ -100,6 +100,7 @@
                 <h5>Idade: '.$idade.'</h5>
                 <h5>Altura: '.$altura.'</h5>
                 <h5>Atividade Física: '.$atividade.'</h5>
+                <h5>Metabolismo Basal: '.$pessoas[0]->metabolismo.'</h5>
                 <h5>Calorias necessarias para manter o peso:</h5>
                 <input class="form-control" id="manter" type="number" step="0.01" name="manter" required>
                 <h5>Calorias necessarias para aumentar o peso:</h5>
