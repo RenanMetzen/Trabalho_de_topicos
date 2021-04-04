@@ -1,0 +1,12 @@
+O usuário ira se cadastrar dentro do programa, inserindo seus dados e caracteristicas fisicas
+
+Quando isso ocorrer, o programa ira calcular o metabolismo basal e, antes de cadastrar o usuario, ira verificar
+qual pessoa está mais proxima dele por meio do calculo do vizinho mais proximo. Se a proximidade for menor que 
+4 o programa ira inserir, junto aos dados informados e ao metabolismo basal, quantas calorias diarias este novo
+usuario necessita para aumentar, manter ou diminuir seu peso, com base no usuario mais semelhante. Se não 
+encontrar um usuario proximo, ele deixa essas 3 informações como null.
+
+Há também uma pagina de admin, para que o especialista possa inserir, para aqueles que ainda não possuem, as 
+calorias para aumentar, perder ou manter o peso, dando uma resposta a esses casos e tornando o programa mais 
+inteligente. O programa não funciona por meio de seções mas é possivel entrar na pagina de admin por meio de
+"localhost/Trabalho_de_topicos/views/admin.php".
