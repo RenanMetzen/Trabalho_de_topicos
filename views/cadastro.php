@@ -13,7 +13,7 @@
 <body style="padding:0; min-height: 100vh; box-sizing: border-box; margin: 0;">
 <div style="display:flex; height:100%; flex-direction:column; justify-content:space-between;">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
-      <h4>Cálculo de Kcalorias basais</h4>
+      <h4>Cálculo de Calorias basais</h4>
 </nav>
     <div class="form-group col-md-4 container-fluid" style="padding:10; height:100%; border-bottom-style: solid;">
       <h3 style="text-align:center;"><b>Cadastro:</b></h3>
@@ -22,66 +22,78 @@
       
       <div class="form-group">
         <label for="nome">Nome</label>
-        <input class="form-control" id="nome" type="text" name="nome" placeholder="Nome">
+        <input class="form-control" id="nome" type="text" name="nome" required placeholder="Nome">
       </div>
-      
+
       <div class="form-group">
-        <label for="biotipo">Biotipo</label>
-        <select class="form-control" name="biotipo" id="biotipo">
-          <option value=0 disabled selected>Selecione o seu biotipo</option>
-          <option value="1.1">Endomorfo</option>
-          <option value="1.2">Mesomorfo</option>
-          <option value="1.3">Ectomorfo</option>
+        <label for="biotipo">Sexo</label>
+        <select class="form-control" name="sexo" required id="sexo">
+          <option value=0 disabled selected>Selecione seu sexo</option>
+          <option value="1">Feminino</option>
+          <option value="2">Masculino</option>
         </select>
       </div>
 
       <div class="form-group">
+        <label for="nome">Altura</label>
+        <input class="form-control" id="altura" type="int" name="altura" required placeholder="Altura (cm)">
+      </div>
+
+      <div class="form-group">
+        <label for="nome">Idade</label>
+        <input class="form-control" id="idade" type="int" name="idade" required placeholder="Idade">
+      </div>
+
+      <div class="form-group">
+        <label for="nome">Peso</label>
+        <input class="form-control" id="peso" type="int" name="peso" required placeholder="Peso (kg)">
+      </div>
+
+      <!--<div class="form-group">
         <label for="biotipo">Altura</label>
-        <select class="form-control" name="altura" id="altura">
+        <select class="form-control" name="altura" required  id="altura" >
           <option value=0 disabled selected>Selecione a sua altura (cm)</option>
-          <option value="8">201 ou mais</option>
-          <option value="7">200 - 191</option>
-          <option value="6">190 - 181</option>
-          <option value="5">180 - 171</option>
-          <option value="4">170 - 161</option>
-          <option value="3">160 - 151</option>
-          <option value="2">150 - 141</option>
-          <option value="1">140 ou menos</option>
+          <option value="1">Menos de 140</option>
+          <option value="2">De 140 a 149</option>
+          <option value="3">De 150 a 159</option>
+          <option value="4">De 160 a 169</option>
+          <option value="5">De 170 a 179</option>
+          <option value="6">De 180 a 189</option>
+          <option value="7">De 190 a 199</option>
+          <option value="8">Mais de 200</option>
         </select>
       </div>
     
       <div class="form-group">
         <label for="biotipo">Idade</label>
-        <select class="form-control" name="idade" id="idade">
+        <select class="form-control" name="idade" required id="idade">
           <option value=0 disabled selected>Selecione a sua idade</option>
-          <option value="7">0 - 3</option>
-          <option value="6">4 - 10</option>
-          <option value="5">11 - 18</option>
-          <option value="4">19 - 29</option>
-          <option value="3">30 - 50</option>
-          <option value="2">50 - 70</option>
-          <option value="1">mais de 50</option>
+          <option value="1">Menos de 13</option>
+          <option value="2">De 13 a 18</option>
+          <option value="3">De 19 a 29</option>
+          <option value="4">De 30 a 49</option>
+          <option value="5">De 50 a 70</option>
+          <option value="6">Mais de 70</option>
         </select>
       </div>
 
       <div class="form-group">
-        <label for="biotipo">Pessoa</label>
-        <select class="form-control" name="idade" id="idade">
+        <label for="biotipo">Peso</label>
+        <select class="form-control" required  name="peso" id="peso">
           <option value=0 disabled selected>Selecione o seu Peso (kg)</option>
-          <option value="8">mais de 120</option>
-          <option value="7">120 - 111</option>
-          <option value="6">110 - 101</option>
-          <option value="5">100 - 91</option>
-          <option value="4">90 - 81</option>
-          <option value="3">80 - 71</option>
-          <option value="2">70 - 51</option>
-          <option value="1">menos de 50</option>
+          <option value="1">Menos de 60</option>
+          <option value="2">De 60 a 69</option>
+          <option value="3">De 70 a 79</option>
+          <option value="4">De 80 a 89</option>
+          <option value="5">De 90 a 99</option>
+          <option value="6">De 100 a 110</option>
+          <option value="7">Mais de 110</option>
         </select>
-      </div>
+      </div> -->
 
       <div class="form-group">
         <label for="atividade">Atividade Física</label>
-        <select class="form-control" name="atividade_fisica" id="atividade_fisica">
+        <select class="form-control" required name="atividade_fisica" id="atividade_fisica">
           <option value=0 disabled selected>Selecione a sua frequência de atividade física</option>
           <option value=1>Sedentário</option>
           <option value=2>Moderada</option>
@@ -96,7 +108,7 @@
     
     <div class="text-center p-3 bg-dark text-white" style="background-color: rgba(0, 0, 0, 0.2);">
     <b>Autores:</b> João, Renan, Ruan, Thiago e Thomas
-  </div>
+    </div>
   </div>
 </body>
 </html>
