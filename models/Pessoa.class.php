@@ -41,8 +41,7 @@ class Pessoa{
         $sql = "insert 
                 into pessoa (nome, sexo, peso, altura, idade, atividade, metabolismo, diminuir, manter, aumentar)
                 values
-                ('".$this->nome."',".$this->sexo.",".$this->peso.",".$this->altura.",".$this->idade.",".$this->atividade_fisica.",".$this->metabolismo.",".$this->diminuir.",".$this->manter.",".$this->aumentar.")";
-        echo $sql;
+                ('".$this->nome."',".$this->sexo.",".$this->peso.",".$this->altura.",".$this->idade.",".$this->atividade_fisica.",".$this->metabolismo.",".$this->diminuir.",".$this->manter.",".$this->aumentar.")";        
         $conexao->executa($sql);
     }
 
@@ -62,5 +61,31 @@ class Pessoa{
         }else{
             return false;
         }
+    }
+
+    public static function listaSem(){
+        $conexao = new MySQL();
+		$sql = "SELECT * FROM pessoa";
+		$resultados = $conexao->consulta($sql);
+		if(!empty($resultados)){
+            $pessoas = array();
+            foreach($resultados as $resultado){
+                if($resultado['manter']==null || $resultado['aumentar']==null || $resultado['diminuir']==null){
+                    $pessoa = new Pessoa($resultado['id'], $resultado['nome'], $resultado['sexo'], $resultado['peso'], $resultado['altura'], $resultado['idade'], $resultado['atividade'], $resultado['metabolismo'], $resultado['diminuir'], $resultado['manter'], $resultado['aumentar']);
+                    $pessoas[] = $pessoa;
+                }
+            }
+            return $pessoas;
+        }else{
+            return false;
+        }
+    }
+
+    public function editar($id){
+        $conexao = new MySQL();
+        $sql = "UPDATE pessoa SET aumentar = ".$this->aumentar.", manter = ".$this->manter.", diminuir = ".$this->diminuir."
+        where id =".$id;
+        echo $sql;
+        $conexao->executa($sql);
     }
 }

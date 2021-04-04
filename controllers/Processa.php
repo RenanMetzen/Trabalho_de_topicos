@@ -93,7 +93,7 @@
     }
 
     $p1 = new Pessoa(null, $_POST['nome'], $_POST["sexo"], $peso, $altura, $idade, $_POST['atividade_fisica'], $metabolismo, $diminuir, $manter, $aumentar);
-    //$p1->inserir();
+    $p1->inserir();
 
     if ($manter != 'null'){
         header("location: ../views/resposta.php?metabolismo=".$metabolismo."&manter=".$manter."&aumentar=".$aumentar."&diminuir=".$diminuir."");

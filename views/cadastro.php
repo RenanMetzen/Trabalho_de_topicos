@@ -49,48 +49,6 @@
         <input class="form-control" id="peso" type="int" name="peso" required placeholder="Peso (kg)">
       </div>
 
-      <!--<div class="form-group">
-        <label for="biotipo">Altura</label>
-        <select class="form-control" name="altura" required  id="altura" >
-          <option value=0 disabled selected>Selecione a sua altura (cm)</option>
-          <option value="1">Menos de 140</option>
-          <option value="2">De 140 a 149</option>
-          <option value="3">De 150 a 159</option>
-          <option value="4">De 160 a 169</option>
-          <option value="5">De 170 a 179</option>
-          <option value="6">De 180 a 189</option>
-          <option value="7">De 190 a 199</option>
-          <option value="8">Mais de 200</option>
-        </select>
-      </div>
-    
-      <div class="form-group">
-        <label for="biotipo">Idade</label>
-        <select class="form-control" name="idade" required id="idade">
-          <option value=0 disabled selected>Selecione a sua idade</option>
-          <option value="1">Menos de 13</option>
-          <option value="2">De 13 a 18</option>
-          <option value="3">De 19 a 29</option>
-          <option value="4">De 30 a 49</option>
-          <option value="5">De 50 a 70</option>
-          <option value="6">Mais de 70</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="biotipo">Peso</label>
-        <select class="form-control" required  name="peso" id="peso">
-          <option value=0 disabled selected>Selecione o seu Peso (kg)</option>
-          <option value="1">Menos de 60</option>
-          <option value="2">De 60 a 69</option>
-          <option value="3">De 70 a 79</option>
-          <option value="4">De 80 a 89</option>
-          <option value="5">De 90 a 99</option>
-          <option value="6">De 100 a 110</option>
-          <option value="7">Mais de 110</option>
-        </select>
-      </div> -->
-
       <div class="form-group">
         <label for="atividade">Atividade Física</label>
         <select class="form-control" required name="atividade_fisica" id="atividade_fisica">
