@@ -100,4 +100,5 @@
     }else {
         header("location: ../views/cadastro.php");
     }
+    
 ?>

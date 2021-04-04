@@ -7,5 +7,4 @@
     $p1->editar($_POST['id']);
 
     header("location: ../views/admin.php");
-    
 ?>

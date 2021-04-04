@@ -48,7 +48,6 @@
         <label for="nome">Peso</label>
         <input class="form-control" id="peso" type="int" name="peso" required placeholder="Peso (kg)">
       </div>
-
       <div class="form-group">
         <label for="atividade">Atividade Física</label>
         <select class="form-control" required name="atividade_fisica" id="atividade_fisica">
